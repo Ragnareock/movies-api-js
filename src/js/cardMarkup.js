@@ -5,8 +5,8 @@ function createMarkup(arr) {
       <li>
         <img src="https://image.tmdb.org/t/p/w300/${poster_path}" alt="${original_title}" />
         <h2>${original_title}</h2>
-        <p>${release_date}</p>
-        <p>${vote_average}</p>
+        <p>Release date: ${release_date}</p>
+        <p>Vote average: ${vote_average}</p>
       </li>`
     )
     .join('');

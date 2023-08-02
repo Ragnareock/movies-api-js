@@ -4,14 +4,30 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+   margin-left: 41%;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 body {
   font-family: system-ui;
   background-color: #7fa2ac;
-  color: #504945;
+  color: #0d0e0f;
   line-height: 1.5;
 }
 
 img {
+  margin-left: 41%;
+  margin-top: 30px;
+  margin-bottom: 10px;
   object-fit: cover;
   display: block;
   border-radius: 2px;
