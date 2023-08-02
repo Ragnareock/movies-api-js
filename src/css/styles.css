@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  background-color: #7fa2ac;
+  color: #504945;
+  line-height: 1.5;
+}
+
+img {
+  object-fit: cover;
+  display: block;
+  border-radius: 2px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* .js-load-more {
+  cursor: pointer;
+  display: block;
+  max-width: 100%;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 8px 15px;
+  margin: 30px auto;
+}
+
+.js-load-more:hover,
+.js-load-more:focus {
+  border: 2px solid #458588;
+  background-color: #fb4934;
+  outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+.loader {
+  width: 100%;
+  height: 12px;
+  display: inline-block;
+  background-color: #fff;
+  background-image: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.25) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.25) 50%,
+    rgba(0, 0, 0, 0.25) 75%,
+    transparent 75%,
+    transparent
+  );
+  font-size: 30px;
+  background-size: 1em 1em;
+  box-sizing: border-box;
+  animation: barStripe 1s linear infinite;
+}
+
+@keyframes barStripe {
+  0% {
+    background-position: 1em 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
